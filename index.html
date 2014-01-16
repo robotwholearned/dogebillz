@@ -1,0 +1,81 @@
+<html>
+<head>
+	<style type="text/css">
+		/*background-color: #6b92b9;*/
+		body{
+			background-image: url(images/single-dolla.png), url(images/make-it-rain-4.png), url(images/make-it-rain-5.png), url(images/make-it-rain-6.png);
+			-webkit-animation: snow 20s linear infinite;
+    		-moz-animation: snow 20s linear infinite;
+    		-ms-animation: snow 20s linear infinite;
+    		animation: snow 20s linear infinite;
+    		z-index: -1;
+		}
+		@keyframes snow {
+			0% {background-position: 0 0, 0 0, 0 0, 0 0;}
+		 	100% {background-position: 500px 1000px, 400px 400px, 300px 300px, 200px 200px;}
+		}
+		 
+		@-moz-keyframes snow {
+			0% {background-position: 0 0, 0 0, 0 0, 0 0;}
+			100% {background-position: 500px 1000px, 400px 400px, 300px 300px, 200px 200px;}
+		}
+		 
+		@-webkit-keyframes snow {
+			0% {background-position: 0 0, 0 0, 0 0, 0 0;}
+		 	100% {background-position: 500px 1000px, 400px 400px, 300px 300px, 200px 200px;}
+		}
+		 
+		@-ms-keyframes snow {
+			0% {background-position: 0 0, 0 0, 0 0, 0 0;}
+		 	100% {background-position: 500px 1000px, 400px 400px, 300px 300px, 200px 200px;}
+		}
+		#shibe{
+			position: fixed;
+			height: 960px;
+			width: 540px;
+			top:50%;
+			margin-top: -280px;
+			left: 50%;
+			margin-left: -270px;
+			z-index: 10;
+		}
+		#sunglasses{
+			background-color: black;
+			height: 160px;
+			width: 320px;
+			position: fixed;
+			top: 50%;
+			left: 50%;
+		  	margin-top: -130px;
+		  	margin-left: -210px;
+		  	background-image: url(images/sunglass-dollas.png);
+		  	-webkit-animation: sunglasses-background 20s linear infinite;
+    		-moz-animation: sunglasses-background 20s linear infinite;
+    		-ms-animation: sunglasses-background 20s linear infinite;
+    		animation: sunglasses-background 20s linear infinite;
+		  	z-index: 0;
+		}
+		@-webkit-keyframes sunglasses-background {
+			0% {background-position: 0 0;}
+		 	100% {background-position: 100px 600px;}
+		}
+		@keyframes sunglasses-background {
+			0% {background-position: 0 0;}
+		 	100% {background-position: 100px 600px;}
+		 }
+		@-moz-keyframes sunglasses-background {
+			0% {background-position: 0 0;}
+		 	100% {background-position: 100px 600px;}
+		}
+		@-ms-keyframes sunglasses-background {
+			0% {background-position: 0 0;}
+		 	100% {background-position: 100px 600px;}
+		 }
+
+	</style>
+</head>
+<body>
+	<img src="images/dogeshades.png" id="shibe"/>
+	<p id="sunglasses"></p>
+</body>
+</html>
